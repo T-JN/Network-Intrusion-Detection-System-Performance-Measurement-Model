@@ -4,7 +4,7 @@
 import json                 #malware files to 20,40,80,128,256,512,1024 byte size
 import logging
 import multiprocessing
-import os                  # Ubuntu
+import os                  # Ubuntu 20_04
 import time
 
 
