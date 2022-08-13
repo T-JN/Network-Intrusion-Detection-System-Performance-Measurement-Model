@@ -59,7 +59,7 @@ def _create_docker_image(FLAGS, project_dir, workspace_dir,
     setup_execution_time: Map from string->double containing wall times for
       different operations. This will have insertions describing the docker
       setup time.
-  """
+  """""""
 
   # Download TensorFlow pip package and modify package
   # path accordingly, if applicable
