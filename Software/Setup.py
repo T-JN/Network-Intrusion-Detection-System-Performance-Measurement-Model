@@ -26,7 +26,7 @@ def _load_docker_image(FLAGS, workspace_dir, setup_execution_time):
     workspace_dir: String - The path to use for intermediate artifacts.
     setup_execution_time: Map from string->double containing wall times for
       different operations. This will have insertions describing the docker
-      setup time.
+      setup time
   """
   load_docker_start_time = time.time()
   local_docker_image_path = _temporary_file_name(workspace_dir, 'local_docker')
