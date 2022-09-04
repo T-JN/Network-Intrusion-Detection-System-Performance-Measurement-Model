@@ -7,7 +7,7 @@ class TestBenchmarkRunner(unittest.TestCase):
     """Tests returning methods on a class based on a filter."""
     config = mock.Mock()
     config.workspace = 'workspace'
-    config.benchmark_method_patterns = ['new_foo.BenchmarkClass.filter:bench.*']
+    config.benchmark_method_patterns = ['new_foo.BenchmarkClass.filter:bench.**']
     benchmark_runner = benchmark.BenchmarkRunner(config)
 
     mock_benchmark_class = mock.Mock()
