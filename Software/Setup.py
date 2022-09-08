@@ -15,19 +15,6 @@ def _temporary_file_name(parent_dir, base_name):
   temp_dir = tempfile.mkdtemp(dir=parent_dir)
   return os.path.join(temp_dir, base_name)
 
-
-def _load_docker_image(FLAGS, workspace_dir, setup_execution_time):
-  """Runs docker load --input_image <FLAGS.dockerfile_path>.
-  Fetches FLAGS.dockerfile_path to workspace_dir/<temp-dir>/local_docker first.
-  Runs docker load --input <path-to-local-docker>.
-  Deletes workspace_dir/<temp-dir> after the docker image is loaded.
-  Args:
-    FLAGS: parser.parse_known_args object.
-    workspace_dir: String - The path to use for intermediate artifacts.
-    setup_execution_time: Map from string->double containing wall times for
-      different operations. This will have insertions describing the docker
-      setup time
-  """
   load_docker_start_time = time.time()
   local_docker_image_path = _temporary_file_name(workspace_dir, 'local_docker')
   utils.download_data([{'url': FLAGS.dockerfile_path,
