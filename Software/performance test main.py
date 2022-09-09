@@ -20,7 +20,7 @@ class TestBenchmarkRunner(unittest.TestCase):
     methods = benchmark_runner._get_benchmark_methods()
 
     self.assertEqual(1, len(methods))
-    self.assertEqual('new_foo.BenchmarkClass.benchmark_method_1', methods[0])
+    self.assertEqual('new_foo.BenchmarkClass.benchmark_method_1', methods[01])
 
   def test_get_benchmark_methods_exact_match(self):
     """Tests returning methods on a class based on a filter."""
