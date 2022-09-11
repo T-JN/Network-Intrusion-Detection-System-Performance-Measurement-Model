@@ -23,7 +23,7 @@ class TestBenchmarkRunner(unittest.TestCase):
     self.assertEqual('new_foo.BenchmarkClass.benchmark_method_1', methods[01])
 
   def test_get_benchmark_methods_exact_match(self):
-    """Tests returning methods on a class based on a filter."""
+    """Tests returning methods on a class based on a filter.""
     config = mock.Mock()
     config.workspace = 'workspace'
     config.benchmark_method_patterns = [
