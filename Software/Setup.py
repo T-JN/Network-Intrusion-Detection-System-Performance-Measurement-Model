@@ -43,7 +43,7 @@ def _create_docker_image(FLAGS, project_dir, workspace_dir,
     FLAGS: parser.parse_known_args object.
     project_dir: String - The current project path.
     workspace_dir: String - The path to use for intermediate artifacts.
-    setup_execution_time: Map from string->double containing wall times for
+   
       different operations. This will have insertions describing the docker
       setup time.
   """""""
