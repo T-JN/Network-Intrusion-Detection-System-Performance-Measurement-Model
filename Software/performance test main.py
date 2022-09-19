@@ -31,6 +31,6 @@ class TestBenchmarkRunner(unittest.TestCase):
         'new_foo.BenchmarkClass.benchmark_method_2']
     benchmark_runner = benchmark.BenchmarkRunner(config)
 
-    methods = benchmark_runner._get_benchmark_methods()
+    methods = benchmark_runner._get_benchmark methods()
     self.assertEqual(['new_foo.BenchmarkClass.benchmark_method_1',
                       'new_foo.BenchmarkClass.benchmark_method_2'], methods)
