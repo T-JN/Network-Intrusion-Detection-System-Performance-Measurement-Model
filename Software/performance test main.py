@@ -8,7 +8,7 @@ class TestBenchmarkRunner(unittest.TestCase):
     config = mock.Mock()
     config.workspace = 'workspace'
     config.benchmark_method_patterns = ['new_foo.BenchmarkClass.filter:bench.**']
-    benchmark_runner = benchmark.BenchmarkRunner(config)
+    benchmark_runner = benchmark.Benchmark   Runner(config)
 
     mock_benchmark_class = mock.Mock()
     mock_benchmark_class.benchmark_method_1 = 'foo'
