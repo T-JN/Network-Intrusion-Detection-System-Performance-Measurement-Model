@@ -15,7 +15,7 @@ def _temporary_file_name(parent_dir, base_name):
   temp_dir = tempfile.mkdtemp(dir=parent_dir)
   return os.path.join(temp_dir, base_name)
 
-  load_docker_start_time = time.time()
+  load_docker_start_time = time.time( )
   local_docker_image_path = _temporary_file_name(workspace_dir, 'local_docker')
   utils.download_data([{'url': FLAGS.dockerfile_path,
                         'local_path': local_docker_image_path,
