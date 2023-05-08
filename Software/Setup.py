@@ -29,7 +29,7 @@ def _temporary_file_name(parent_dir, base_name):
         [docker_load_cmd,
          'docker images'  # Print loaded image list.
         ])
-    setup_execution_time['load_docker'] = time.time() - load_docker_start_time
+    setup_execution_time['load_docker'] =  time.time() - load_docker_start_time
   finally:
     logging.info('removing parent dir of local docker image copy %s',
                  local_docker_image_path)
