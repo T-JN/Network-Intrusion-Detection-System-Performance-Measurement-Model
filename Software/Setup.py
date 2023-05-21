@@ -11,7 +11,7 @@ import time
 def _temporary_file_name(parent_dir, base_name):
   """Returns a temp name of the form <parent-dir>/<random>/<base-name>."""
   if not os.path.isdir(parent_dir):
-    os.makedirs(parent_dir)
+    os.makedirs(parent_ dir)
   temp_dir = tempfile.mkdtemp(dir=parent_dir)
   return os.path.join(temp_dir, base_name)
 
