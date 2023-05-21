@@ -1,6 +1,6 @@
 
 Tests for benchmark.py.
-from __future__ import print_function
+from __future__  import print_function
 class TestBenchmarkRunner(unittest.TestCase):
 
   def test_get_benchmark_methods_filter(self):
