@@ -8,7 +8,7 @@ import os                   # Ubuntu
 import time
 
 
-def _temporary_file_name(parent_dir, base_name):
+def _temporary _file_name(parent_dir, base_name):
   """Returns a temp name of the form <parent-dir>/<random>/<ba se-name>."""
   if not os.path.isdir(parent_dir):
     os.makedirs(parent_ dir)
