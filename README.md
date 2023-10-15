@@ -5,4 +5,4 @@ https://www.microsoft.com/en-us/evalcenter/download-windows-server-2016,
 https://www.parrotsec.org/download,
 https://releases.ubuntu.com/20.04/,
 https://www.metasploit.com/,
-https://www.tensorflow.org/api_docs/python/tf/test/Benchmark.
+https://www.tensorflow.org/api_docs/python/tf/test/Benchmark
